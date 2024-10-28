@@ -1,0 +1,152 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #33ff33;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Terminal Navigation Bar */
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #33ff33;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00ff00;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact a {
+    color: #33ff33;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Terminal Animations */
+.typing {
+    border-right: 2px solid #33ff33;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 1.5s steps(12, end) forwards, blink 0.5s step-end infinite;
+}
+
+.fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 1s 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    to {
+        width: 11rem;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.back-link {
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+#project-details h2, #project-details h3 {
+    color: #33ff33;
+    margin-top: 20px;
+}
+
+.project-card {
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #33ff33;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: #333333;
+}
+
+.project-card h3, .project-card p {
+    margin: 0;
+    color: inherit;
+}
+

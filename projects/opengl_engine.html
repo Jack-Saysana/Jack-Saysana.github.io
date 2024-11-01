@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Portfolio Terminal</title>
+    <title>Portfolio - Graphics Engine</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -20,27 +20,59 @@
     </header>
 
     <section id="project-details" class="section">
-        <div class="container">
-            <h2>Project 1 - [OpenGL Graphics Engine]</h2>
-            <p>This is a full graphics/game engine library written in C. It is designed with the intention of providing game/graphics developers with an easy means of loading, simulating and rendering models.</p>
 
-            <h3>Technologies Used:</h3>
+        <pre class="fancy-title">
+  ________            ______            _          
+ /_  __/ /_  ___     / ____/___  ____ _(_)___  ___ 
+  / / / __ \/ _ \   / __/ / __ \/ __ `/ / __ \/ _ \
+ / / / / / /  __/  / /___/ / / / /_/ / / / / /  __/
+/_/ /_/ /_/\___/  /_____/_/ /_/\__, /_/_/ /_/\___/ 
+                              /____/               
+        </pre>
+        <p class="project-description">This is a full graphics/game engine library written in C. It is designed with the intention of providing game/graphics developers with an easy means of loading, simulating and rendering models.</p>
+
+        <img class="project-image" src="../assets/digital_man.png"/>
+
+        <div class="project-detail container">
+            <h3 class="section-header">Features:</h3>
+            <h4 class="feature-detail">> 3D Model Management</h4>
+            <ul class="feature-list">
+                <li>Supports importing fully rigged models with joint and hit-box data</li>
+                <li>Easily import 3D models created in Blender</li>
+                <li>Modify and save model data in code</li>
+                <li>Load and play skeletal animations</li>
+            </ul>
+            <h4 class="feature-detail">> Physics Simulation</h4>
+            <ul class="feature-list">
+                <li>Fast and robust collision detection of 3D Model Instances</li>
+                <li>Impulse based collision response</li>
+                <li>Articulated body (ragdoll) support</li>
+            </ul>
+            <h4 class="feature-detail">> User Interface Design</h4>
+            <ul class="feature-list">
+                <li>Rich interface for hierarchical UI design</li>
+                <li>Custom UI texturing</li>
+                <li>Text support with importable fonts</li>
+                <li>On click/hover callback support</li>
+            </ul>
+            <h4 class="feature-detail">> Mathematics</h4>
+            <ul class="feature-list">
+                <li>6D Vector Algebra Support</li>
+                <li>Arbitrary matrix and vector arithmetic support</li>
+                <li>Linear system of equations solver</li>
+            </ul>
+        </div>
+
+        <div class="project-detail container">
+            <h3 class="section-header">Technologies Used:</h3>
             <ul>
                 <li>Written fully in C and OpenGL</li>
                 <li>Utilizes the GLFW, cglm and glad libraries</li>
             </ul>
-
-            <h3>Features:</h3>
-            <ul>
-                <li>3D model loading, instancing and editing workflows</li>
-                <li>Skeletal animation support</li>
-                <li>Collision detection and physical simulation of models</li>
-            </ul>
-
-            <p><a href="../index.html" class="back-link">Return to Portfolio</a></p>
+            <p class="code-link"><a href="https://github.com/Jack-Saysana/OpenGL-Graphics-Engine" class="back-link"><--Source Code/Documentation--></a></p>
+            <p class="return-link"><a href="../index.html" class="back-link"><-- Return to Portfolio --></a></p>
         </div>
     </section>
 
 </body>
 </html>
-

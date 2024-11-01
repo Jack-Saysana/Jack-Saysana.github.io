@@ -14,6 +14,21 @@ body {
     align-items: center;
 }
 
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: ">";
+    padding-right: 1rem;
+}
+
+/* ASCII Art Decoration */
+
+.fancy-title {
+    font-weight: bold;
+}
+
 /* Terminal Navigation Bar */
 header {
     width: 100%;
@@ -54,6 +69,10 @@ nav a:hover {
     text-align: left;
 }
 
+.project-detail {
+    margin-bottom: 3rem;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
@@ -89,11 +108,12 @@ nav a:hover {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: typing 1.5s steps(12, end) forwards, blink 0.5s step-end infinite;
+    animation: typing 1.5s steps(20, end) forwards, blink 0.5s step-end infinite;
 }
 
 .fade-in-delay {
     opacity: 0;
+    margin-top: 1rem;
     animation: fadeIn 1s 1.5s ease forwards;
 }
 
@@ -105,7 +125,7 @@ nav a:hover {
 
 @keyframes typing {
     to {
-        width: 11rem;
+        width: 17rem;
     }
 }
 
@@ -115,8 +135,9 @@ nav a:hover {
     }
 }
 
+/* Project decorations */
 .back-link {
-    color: #33ff33;
+    color: #00ffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -126,8 +147,11 @@ nav a:hover {
 }
 
 #project-details h2, #project-details h3 {
-    color: #33ff33;
     margin-top: 20px;
+}
+
+.project-description {
+    margin-bottom: 3rem;
 }
 
 .project-card {
@@ -147,6 +171,46 @@ nav a:hover {
 
 .project-card h3, .project-card p {
     margin: 0;
-    color: inherit;
 }
 
+.project-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+}
+
+.project-image-vs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 49rem;
+}
+
+.feature-list {
+    margin-left: 1rem;
+}
+
+.feature-detail {
+    margin-top: 0.5rem;
+}
+
+.section-header {
+    color: #00ffff;
+}
+
+/* Return to portfolio link */
+
+.code-link {
+    margin-top: 2rem;
+}
+
+/* Project buttons */
+
+.project-title {
+    color: #00ffff;
+}
+
+.project-teaser {
+    color: #33ff33;
+}

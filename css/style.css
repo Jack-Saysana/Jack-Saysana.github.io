@@ -94,7 +94,7 @@ nav a:hover {
 
 /* Contact Section */
 #contact a {
-    color: #33ff33;
+    color: #00ffff;
     text-decoration: none;
 }
 
@@ -192,11 +192,12 @@ nav a:hover {
 }
 
 .feature-detail {
+    color: #00ffff;
     margin-top: 0.5rem;
 }
 
 .section-header {
-    color: #00ffff;
+    color: #ffff00;
 }
 
 /* Return to portfolio link */

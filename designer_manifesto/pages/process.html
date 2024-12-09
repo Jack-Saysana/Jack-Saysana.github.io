@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Manifesto - Process</title>
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="main">
+    <p class="waterfall" id="waterfall_2"></p>
+
+    <div class="container">
+        <pre id="process-diagram">
++---------------------+    +---------------------+    +--------------------+    +--------------------+
+|                     |    |                     |    |                    |    |                    |
+|    BRAINSTORMING    |===>|     PROTOTYPING     |===>|      FEEDBACK      |===>|   IMPLEMENTATION   |
+|                     | || |                     | || |                    | || |                    |
++---------------------+ || +---------------------+ || +--------------------+ || +--------------------+
+          /\            ||           /\            ||           /\           ||             ||
+          ||____________||___________||____________||___________||___________||_____________||
+          |____________________________I  T  E  R  A  T  I  O  N_____________________________|
+        </pre>
+        <div class="quin-grid">
+            <div>
+                <h3 class="quin-col-header">Brainstorming</h3>
+                <ul class="col-list">
+                    <li class="col-list-item">Develop a completely unstructured list of potential ideas, qualities, solutions and approaches</li>
+                    <li class="col-list-item">Ideas need not be complete or fully proven</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="quin-col-header">Prototyping</h3>
+                <ul class="col-list">
+                    <li class="col-list-item">Develop low-fidelity protoypes of brainstormed ideas which seem promising/attractive</li>
+                    <li class="col-list-item">Prototype has less focus on the visual, more focus on the functional</li>
+                    <li class="col-list-item">Prototypes are typically rough, digital mock-ups</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="quin-col-header">Feedback</h3>
+                <ul class="col-list">
+                    <li class="col-list-item">Perform critical self-reflective analysis and completed prototype to evaluate strengths and weaknesses</li>
+                    <li class="col-list-item">Utilize user feedback from desired audience to further parse potential changes</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="quin-col-header">Implementation</h3>
+                <ul class="col-list">
+                    <li class="col-list-item">With a promising prototype and relevant feedback, begin creating the final product</li>
+                    <li class="col-list-item">More attention granted to visual detailing</li>
+                    <li class="col-list-item">Refine techincal/functional details</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="quin-col-header">Iteration</h3>
+                <ul class="col-list">
+                    <li class="col-list-item">A single "run-through" of this process will not result in a quality result</li>
+                    <li class="col-list-item">Constantly refine via iteration and testing</li>
+                    <li class="col-list-item">Fall back to brainstorming and prototyping phases if later phases fail</li>
+                </ul>
+            </div>
+        </div>
+        <a class="back-btn" href="../manifesto.html">Home</a>
+    </div>
+
+    <p class="waterfall" id="waterfall_1"></p>
+    <script src="../js/rand_tab.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

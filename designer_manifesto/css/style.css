@@ -1,0 +1,194 @@
+body {
+    font-family: fixedsys, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1%;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px;
+}
+
+#cube {
+    font-size: 1rem;
+    margin-left: 9rem;
+    color: goldenrod;
+}
+
+#computer {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    width: 27rem;
+    color: gold;
+    text-shadow: 2px 2px goldenrod;
+}
+
+#painting {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    width: 48.5rem;
+    color: gold;
+    text-shadow: 2px 2px goldenrod;
+}
+
+#process-diagram {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    width: 49.5rem;
+    color: gold;
+    text-shadow: 2px 2px goldenrod;
+}
+
+#swords {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    width: 43rem;
+    color: gold;
+    text-shadow: 2px 2px goldenrod;
+}
+
+#book {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    width: 23rem;
+    color: gold;
+    text-shadow: 2px 2px goldenrod;
+}
+
+.fancy-text {
+    color: gold;
+    text-shadow: 2px 2px goldenrod;
+    font-weight: bolder;
+    text-align: right;
+    border-right: 2px solid gold;
+    animation: blink 0.5s step-end infinite;
+    margin-top: 18rem;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tri-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.quin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.quin-col-header {
+    font-size: 1.5rem;
+    color: gold;
+    text-shadow: 0px 2px goldenrod;
+}
+
+.principle-btn {
+    padding: 20px;
+    text-decoration: none;
+    border: 2px solid gold;
+    color: rgb(0, 102, 255);
+}
+
+.principle-btn:focus {
+    outline: none;
+    border: 2px solid goldenrod;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+
+.principle-btn:hover {
+    border: 2px solid goldenrod;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+
+.back-btn {
+    margin-top: 5rem;
+    margin-left: auto;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid gold;
+    color: rgb(0, 102, 255);
+}
+
+.back-btn:focus {
+    outline: none;
+    border: 2px solid goldenrod;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+
+.back-btn:hover {
+    border: 2px solid goldenrod;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+
+.waterfall {
+    text-align: center;
+    color: gold;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.col-header {
+    font-size: 2rem;
+    color: gold;
+    text-shadow: 0px 2px goldenrod;
+}
+
+.col-list {
+    list-style-type: "+ ";
+    padding-left: 1rem;
+}
+
+.col-list-item {
+    color: rgb(0, 102, 255);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .waterfall {
+        display: none;
+    }
+
+    #cube {
+        display: none;
+    }
+}
